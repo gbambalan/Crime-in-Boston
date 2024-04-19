@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a71faec01a444c5e6c5ed1a88857dce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0a71faec01a444c5e6c5ed1a88857dce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0a71faec01a444c5e6c5ed1a88857dce = L.map(
+                "map_0a71faec01a444c5e6c5ed1a88857dce",
+                {
+                    center: [42.3601, -71.0589],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6d064f11b72420ffb4aeefd656ace930 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6d064f11b72420ffb4aeefd656ace930.addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+            var circle_marker_b4e98ea764ed49989ddb82086293b5b4 = L.circleMarker(
+                [42.32210854312052, -71.09607045839445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_6f3b50d80c1bcc2e59645d03f94aec13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_015ffd31a34dc6adc9e1b9016c009bac = $(`<div id="html_015ffd31a34dc6adc9e1b9016c009bac" style="width: 100.0%; height: 100.0%;">WASHINGTON ST: 27050 crimes</div>`)[0];
+                popup_6f3b50d80c1bcc2e59645d03f94aec13.setContent(html_015ffd31a34dc6adc9e1b9016c009bac);
+            
+        
+
+        circle_marker_b4e98ea764ed49989ddb82086293b5b4.bindPopup(popup_6f3b50d80c1bcc2e59645d03f94aec13)
+        ;
+
+        
+    
+    
+            var circle_marker_2a6a899ecf4e18ba595081a2ad6e5e71 = L.circleMarker(
+                [42.29279524288537, -71.0880016807739],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6817449168207024, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.634898336414048, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_69c001a3bc97f63bd0e0e24d6cc97e9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0209a12309bcca18770533d3c9ebc40d = $(`<div id="html_0209a12309bcca18770533d3c9ebc40d" style="width: 100.0%; height: 100.0%;">BLUE HILL AVE: 12702 crimes</div>`)[0];
+                popup_69c001a3bc97f63bd0e0e24d6cc97e9d.setContent(html_0209a12309bcca18770533d3c9ebc40d);
+            
+        
+
+        circle_marker_2a6a899ecf4e18ba595081a2ad6e5e71.bindPopup(popup_69c001a3bc97f63bd0e0e24d6cc97e9d)
+        ;
+
+        
+    
+    
+            var circle_marker_937885e518e60744922f107fd55d1c95 = L.circleMarker(
+                [42.348051888124445, -71.07992840327502],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6231645101663585, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.463290203327172, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_ed644193bd9a437de2fb5e3772e0280c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_965ba4be9211a4d070f702d944ee9e00 = $(`<div id="html_965ba4be9211a4d070f702d944ee9e00" style="width: 100.0%; height: 100.0%;">BOYLSTON ST: 10061 crimes</div>`)[0];
+                popup_ed644193bd9a437de2fb5e3772e0280c.setContent(html_965ba4be9211a4d070f702d944ee9e00);
+            
+        
+
+        circle_marker_937885e518e60744922f107fd55d1c95.bindPopup(popup_ed644193bd9a437de2fb5e3772e0280c)
+        ;
+
+        
+    
+    
+            var circle_marker_302f119154fab7d0f3353b9995ec5509 = L.circleMarker(
+                [42.33875985250619, -71.07085741683977],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6058632162661738, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.117264325323475, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_20c0ad52839a09da3fd5d38f521f5da1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e174b3385fb47719abeb90cc504e577 = $(`<div id="html_2e174b3385fb47719abeb90cc504e577" style="width: 100.0%; height: 100.0%;">HARRISON AVE: 9281 crimes</div>`)[0];
+                popup_20c0ad52839a09da3fd5d38f521f5da1.setContent(html_2e174b3385fb47719abeb90cc504e577);
+            
+        
+
+        circle_marker_302f119154fab7d0f3353b9995ec5509.bindPopup(popup_20c0ad52839a09da3fd5d38f521f5da1)
+        ;
+
+        
+    
+    
+            var circle_marker_e6fc4c6895cfe5d30999818cebfc276e = L.circleMarker(
+                [42.30332798962852, -71.1198511206229],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5773382624768947, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.546765249537892, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_5fb7de3e1f4fb4cff7b3ec00dda4a3fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9127f0596ed787265b027800a39b44c = $(`<div id="html_e9127f0596ed787265b027800a39b44c" style="width: 100.0%; height: 100.0%;">CENTRE ST: 7995 crimes</div>`)[0];
+                popup_5fb7de3e1f4fb4cff7b3ec00dda4a3fa.setContent(html_e9127f0596ed787265b027800a39b44c);
+            
+        
+
+        circle_marker_e6fc4c6895cfe5d30999818cebfc276e.bindPopup(popup_5fb7de3e1f4fb4cff7b3ec00dda4a3fa)
+        ;
+
+        
+    
+    
+            var circle_marker_e7d17f6200018964d96b2ab097e8ea80 = L.circleMarker(
+                [42.34577942957067, -71.07765953549801],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5679112754158965, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.35822550831793, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_1e590c9b46cfdb89dd00908bd5f03727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9c779199703ae15dfca8dd8b1d03948 = $(`<div id="html_f9c779199703ae15dfca8dd8b1d03948" style="width: 100.0%; height: 100.0%;">TREMONT ST: 7570 crimes</div>`)[0];
+                popup_1e590c9b46cfdb89dd00908bd5f03727.setContent(html_f9c779199703ae15dfca8dd8b1d03948);
+            
+        
+
+        circle_marker_e7d17f6200018964d96b2ab097e8ea80.bindPopup(popup_1e590c9b46cfdb89dd00908bd5f03727)
+        ;
+
+        
+    
+    
+            var circle_marker_4b80c947fa938a16d7be0eaee3ad2347 = L.circleMarker(
+                [42.30162326387306, -71.06075699178085],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5674011090573012, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.348022181146026, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_2634a567b849b1eccbce45a59c178943 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d91f217a72d09150472522083c3da9cf = $(`<div id="html_d91f217a72d09150472522083c3da9cf" style="width: 100.0%; height: 100.0%;">DORCHESTER AVE: 7547 crimes</div>`)[0];
+                popup_2634a567b849b1eccbce45a59c178943.setContent(html_d91f217a72d09150472522083c3da9cf);
+            
+        
+
+        circle_marker_4b80c947fa938a16d7be0eaee3ad2347.bindPopup(popup_2634a567b849b1eccbce45a59c178943)
+        ;
+
+        
+    
+    
+            var circle_marker_585ba7df7625d22f0d71301f3071affa = L.circleMarker(
+                [42.334996630745884, -71.07535053503902],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5534491682070241, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.068983364140481, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_7b789bc03119b8e9ec42d92acd74eb7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba0886b8b202e68fcdfd252de80ca294 = $(`<div id="html_ba0886b8b202e68fcdfd252de80ca294" style="width: 100.0%; height: 100.0%;">MASSACHUSETTS AVE: 6918 crimes</div>`)[0];
+                popup_7b789bc03119b8e9ec42d92acd74eb7e.setContent(html_ba0886b8b202e68fcdfd252de80ca294);
+            
+        
+
+        circle_marker_585ba7df7625d22f0d71301f3071affa.bindPopup(popup_7b789bc03119b8e9ec42d92acd74eb7e)
+        ;
+
+        
+    
+    
+            var circle_marker_96ff221869651da77bf7c280cde88e70 = L.circleMarker(
+                [42.26298171499926, -71.12281869275715],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5511645101663586, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.023290203327171, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_8d7edf86fabddece44e2af537bb47221 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f87d117e579328eb46b6babfc40e48e6 = $(`<div id="html_f87d117e579328eb46b6babfc40e48e6" style="width: 100.0%; height: 100.0%;">HYDE PARK AVE: 6815 crimes</div>`)[0];
+                popup_8d7edf86fabddece44e2af537bb47221.setContent(html_f87d117e579328eb46b6babfc40e48e6);
+            
+        
+
+        circle_marker_96ff221869651da77bf7c280cde88e70.bindPopup(popup_8d7edf86fabddece44e2af537bb47221)
+        ;
+
+        
+    
+    
+            var circle_marker_c81a6254a2d47ad5916f2dff2c4b3faa = L.circleMarker(
+                [42.34846010254618, -71.12032521213555],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5345064695009243, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.690129390018484, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_925279cf9f7e6b7383735333b6ac502e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ae11fb735ef87765c0f8b9f1451b00c = $(`<div id="html_5ae11fb735ef87765c0f8b9f1451b00c" style="width: 100.0%; height: 100.0%;">COMMONWEALTH AVE: 6064 crimes</div>`)[0];
+                popup_925279cf9f7e6b7383735333b6ac502e.setContent(html_5ae11fb735ef87765c0f8b9f1451b00c);
+            
+        
+
+        circle_marker_c81a6254a2d47ad5916f2dff2c4b3faa.bindPopup(popup_925279cf9f7e6b7383735333b6ac502e)
+        ;
+
+        
+    
+    
+            var circle_marker_26799dbd431782ec90669a2cd5d38210 = L.circleMarker(
+                [42.3145418848097, -71.06713919814304],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5060702402957487, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.121404805914972, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_c425c194c6a06adb28690b9ae93176b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29a27ba1451e93be1430d047690f3bce = $(`<div id="html_29a27ba1451e93be1430d047690f3bce" style="width: 100.0%; height: 100.0%;">COLUMBIA RD: 4782 crimes</div>`)[0];
+                popup_c425c194c6a06adb28690b9ae93176b7.setContent(html_29a27ba1451e93be1430d047690f3bce);
+            
+        
+
+        circle_marker_26799dbd431782ec90669a2cd5d38210.bindPopup(popup_c425c194c6a06adb28690b9ae93176b7)
+        ;
+
+        
+    
+    
+            var circle_marker_078dbda830017040424195915d7608df = L.circleMarker(
+                [42.26428753095409, -71.1013743342162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5048502772643253, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.097005545286507, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_caa09b8a786f7b2368304dc6f2967342 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c522b6747162945f7e42675c75695a6 = $(`<div id="html_7c522b6747162945f7e42675c75695a6" style="width: 100.0%; height: 100.0%;">RIVER ST: 4727 crimes</div>`)[0];
+                popup_caa09b8a786f7b2368304dc6f2967342.setContent(html_7c522b6747162945f7e42675c75695a6);
+            
+        
+
+        circle_marker_078dbda830017040424195915d7608df.bindPopup(popup_caa09b8a786f7b2368304dc6f2967342)
+        ;
+
+        
+    
+    
+            var circle_marker_df2e7f7b6a0372404fec68fe042e8f10 = L.circleMarker(
+                [42.337605721600184, -71.09044092377282],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4984177449168207, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.968354898336415, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_4b170d137d84048990092dd8d91139e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_182e4bc7e1098ba940e014568cbd6678 = $(`<div id="html_182e4bc7e1098ba940e014568cbd6678" style="width: 100.0%; height: 100.0%;">HUNTINGTON AVE: 4437 crimes</div>`)[0];
+                popup_4b170d137d84048990092dd8d91139e5.setContent(html_182e4bc7e1098ba940e014568cbd6678);
+            
+        
+
+        circle_marker_df2e7f7b6a0372404fec68fe042e8f10.bindPopup(popup_4b170d137d84048990092dd8d91139e5)
+        ;
+
+        
+    
+    
+            var circle_marker_477a050fdf69a3985a0c24f8b19560bb = L.circleMarker(
+                [42.29756061527772, -71.05968754051793],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.49464695009242143, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.892939001848429, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_f156fa59402e34dc5080a9a1cfcb583d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4a116702c84d0ec9e6514f30455d095 = $(`<div id="html_c4a116702c84d0ec9e6514f30455d095" style="width: 100.0%; height: 100.0%;">GIBSON ST: 4267 crimes</div>`)[0];
+                popup_f156fa59402e34dc5080a9a1cfcb583d.setContent(html_c4a116702c84d0ec9e6514f30455d095);
+            
+        
+
+        circle_marker_477a050fdf69a3985a0c24f8b19560bb.bindPopup(popup_f156fa59402e34dc5080a9a1cfcb583d)
+        ;
+
+        
+    
+    
+            var circle_marker_7ee833024f0afb76e21b901cbeaa347e = L.circleMarker(
+                [42.3618393277066, -71.05976181738896],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4824029574861368, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.6480591497227355, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_efdf2aa0d401a6ad766222a24978d898 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd063a4b3ebfee421126dad2bfa42702 = $(`<div id="html_bd063a4b3ebfee421126dad2bfa42702" style="width: 100.0%; height: 100.0%;">NEW SUDBURY ST: 3715 crimes</div>`)[0];
+                popup_efdf2aa0d401a6ad766222a24978d898.setContent(html_bd063a4b3ebfee421126dad2bfa42702);
+            
+        
+
+        circle_marker_7ee833024f0afb76e21b901cbeaa347e.bindPopup(popup_efdf2aa0d401a6ad766222a24978d898)
+        ;
+
+        
+    
+    
+            var circle_marker_d3af1a07592040b93e02b9ba7043c006 = L.circleMarker(
+                [42.340433366820086, -71.0533669864463],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.47951940850277264, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.590388170055453, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_615fc38b98d7d123182a5c9d916cb385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d81251bfdceed1a4a0426b4038d8907d = $(`<div id="html_d81251bfdceed1a4a0426b4038d8907d" style="width: 100.0%; height: 100.0%;">W BROADWAY: 3585 crimes</div>`)[0];
+                popup_615fc38b98d7d123182a5c9d916cb385.setContent(html_d81251bfdceed1a4a0426b4038d8907d);
+            
+        
+
+        circle_marker_d3af1a07592040b93e02b9ba7043c006.bindPopup(popup_615fc38b98d7d123182a5c9d916cb385)
+        ;
+
+        
+    
+    
+            var circle_marker_5af7bb01f9b3d940349fb73e9fc065d2 = L.circleMarker(
+                [42.32442843333706, -71.07622713475244],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4792975970425139, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.585951940850277, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_00229944152a7db60cdf44757506a5b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3bee8b905a1cc06cdab472e0e3797ae = $(`<div id="html_e3bee8b905a1cc06cdab472e0e3797ae" style="width: 100.0%; height: 100.0%;">DUDLEY ST: 3575 crimes</div>`)[0];
+                popup_00229944152a7db60cdf44757506a5b8.setContent(html_e3bee8b905a1cc06cdab472e0e3797ae);
+            
+        
+
+        circle_marker_5af7bb01f9b3d940349fb73e9fc065d2.bindPopup(popup_00229944152a7db60cdf44757506a5b8)
+        ;
+
+        
+    
+    
+            var circle_marker_353ef2e34a4e920e233fedaf45470d8b = L.circleMarker(
+                [42.328603721669104, -71.09597892345242],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4757486136783734, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5149722735674676, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_dcf2737e544d5097330b960e47502e53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d57e4874000caa66cfb1df10cd84c99a = $(`<div id="html_d57e4874000caa66cfb1df10cd84c99a" style="width: 100.0%; height: 100.0%;">WARREN ST: 3415 crimes</div>`)[0];
+                popup_dcf2737e544d5097330b960e47502e53.setContent(html_d57e4874000caa66cfb1df10cd84c99a);
+            
+        
+
+        circle_marker_353ef2e34a4e920e233fedaf45470d8b.bindPopup(popup_dcf2737e544d5097330b960e47502e53)
+        ;
+
+        
+    
+    
+            var circle_marker_31a9a2ff7032d84b1152895453db4276 = L.circleMarker(
+                [42.32956639657088, -71.08872002896871],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4694713493530499, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3894269870609985, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_5027ab6d2f2d8e5f67a5cb5a75393661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb6c232be024ae1370a5e32527276332 = $(`<div id="html_fb6c232be024ae1370a5e32527276332" style="width: 100.0%; height: 100.0%;">COLUMBUS AVE: 3132 crimes</div>`)[0];
+                popup_5027ab6d2f2d8e5f67a5cb5a75393661.setContent(html_fb6c232be024ae1370a5e32527276332);
+            
+        
+
+        circle_marker_31a9a2ff7032d84b1152895453db4276.bindPopup(popup_5027ab6d2f2d8e5f67a5cb5a75393661)
+        ;
+
+        
+    
+    
+            var circle_marker_12e50889ee61b28fda11efffd29361fe = L.circleMarker(
+                [42.29803584366117, -71.06056505999327],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4658558225508318, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.317116451016636, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_e8ca2befa67d0e026da0af926b72e646 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5d1c8a28b5a92b47007514b18930f9d = $(`<div id="html_b5d1c8a28b5a92b47007514b18930f9d" style="width: 100.0%; height: 100.0%;">ADAMS ST: 2969 crimes</div>`)[0];
+                popup_e8ca2befa67d0e026da0af926b72e646.setContent(html_b5d1c8a28b5a92b47007514b18930f9d);
+            
+        
+
+        circle_marker_12e50889ee61b28fda11efffd29361fe.bindPopup(popup_e8ca2befa67d0e026da0af926b72e646)
+        ;
+
+        
+    
+    
+            var circle_marker_1e8b774538cf93afeddf5d5dacee1357 = L.circleMarker(
+                [42.35005656803246, -71.08093296811697],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.46561182994454714, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.312236598890943, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_44f9fb5435155e90f498c90b1de3de18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41f922d124eef38fcea7fcc7c298dbbb = $(`<div id="html_41f922d124eef38fcea7fcc7c298dbbb" style="width: 100.0%; height: 100.0%;">NEWBURY ST: 2958 crimes</div>`)[0];
+                popup_44f9fb5435155e90f498c90b1de3de18.setContent(html_41f922d124eef38fcea7fcc7c298dbbb);
+            
+        
+
+        circle_marker_1e8b774538cf93afeddf5d5dacee1357.bindPopup(popup_44f9fb5435155e90f498c90b1de3de18)
+        ;
+
+        
+    
+    
+            var circle_marker_3c38774f5361434465a0d2fe172600de = L.circleMarker(
+                [42.34714319795185, -71.08883733213986],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.45804805914972274, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.160961182994455, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_4448b16f42dbcb10c4a5855f0662bf50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_229920abb1a67cd2a1b9da567905f4c7 = $(`<div id="html_229920abb1a67cd2a1b9da567905f4c7" style="width: 100.0%; height: 100.0%;">BEACON ST: 2617 crimes</div>`)[0];
+                popup_4448b16f42dbcb10c4a5855f0662bf50.setContent(html_229920abb1a67cd2a1b9da567905f4c7);
+            
+        
+
+        circle_marker_3c38774f5361434465a0d2fe172600de.bindPopup(popup_4448b16f42dbcb10c4a5855f0662bf50)
+        ;
+
+        
+    
+    
+            var circle_marker_bc653ebd70ad4a57b44402b12fc5a37a = L.circleMarker(
+                [42.31395550932027, -71.06704301737305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4554750462107209, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.109500924214418, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_aaf82fb3cd65f57ee0baec75fdf27397 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f34067e529ce06d38718787193bb4f5 = $(`<div id="html_7f34067e529ce06d38718787193bb4f5" style="width: 100.0%; height: 100.0%;">BOWDOIN ST: 2501 crimes</div>`)[0];
+                popup_aaf82fb3cd65f57ee0baec75fdf27397.setContent(html_7f34067e529ce06d38718787193bb4f5);
+            
+        
+
+        circle_marker_bc653ebd70ad4a57b44402b12fc5a37a.bindPopup(popup_aaf82fb3cd65f57ee0baec75fdf27397)
+        ;
+
+        
+    
+    
+            var circle_marker_d811a6f326fa1c4c0d1d39a93e190e20 = L.circleMarker(
+                [42.359241252248545, -71.10583877364505],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.45336783733826247, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.067356746765249, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_c355958ef904b8aa39a72004d8ff2f3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9c15483dc8e05464b8dfcd80710fc20 = $(`<div id="html_d9c15483dc8e05464b8dfcd80710fc20" style="width: 100.0%; height: 100.0%;">CAMBRIDGE ST: 2406 crimes</div>`)[0];
+                popup_c355958ef904b8aa39a72004d8ff2f3f.setContent(html_d9c15483dc8e05464b8dfcd80710fc20);
+            
+        
+
+        circle_marker_d811a6f326fa1c4c0d1d39a93e190e20.bindPopup(popup_c355958ef904b8aa39a72004d8ff2f3f)
+        ;
+
+        
+    
+    
+            var circle_marker_d24e47d6339c35197447c5eaf7e11d0f = L.circleMarker(
+                [42.284585838409185, -71.10812190542798],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.45312384473197787, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.062476894639556, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_179f3c98afeecb4e877d2e74c525d1d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a4ae95066bdcfd404ca49c15f6ca1dc = $(`<div id="html_7a4ae95066bdcfd404ca49c15f6ca1dc" style="width: 100.0%; height: 100.0%;">AMERICAN LEGION HWY: 2395 crimes</div>`)[0];
+                popup_179f3c98afeecb4e877d2e74c525d1d5.setContent(html_7a4ae95066bdcfd404ca49c15f6ca1dc);
+            
+        
+
+        circle_marker_d24e47d6339c35197447c5eaf7e11d0f.bindPopup(popup_179f3c98afeecb4e877d2e74c525d1d5)
+        ;
+
+        
+    
+    
+            var circle_marker_10b8e8f2602d01d3cc37c695cd9acaa8 = L.circleMarker(
+                [42.30169167767758, -71.06882208771161],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4521478743068392, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.042957486136784, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_1d9b63519fb17a62a4800fec8fe11cab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf66dc786b1b1222cb1e4fc5c5b7cdc1 = $(`<div id="html_bf66dc786b1b1222cb1e4fc5c5b7cdc1" style="width: 100.0%; height: 100.0%;">GENEVA AVE: 2351 crimes</div>`)[0];
+                popup_1d9b63519fb17a62a4800fec8fe11cab.setContent(html_bf66dc786b1b1222cb1e4fc5c5b7cdc1);
+            
+        
+
+        circle_marker_10b8e8f2602d01d3cc37c695cd9acaa8.bindPopup(popup_1d9b63519fb17a62a4800fec8fe11cab)
+        ;
+
+        
+    
+    
+            var circle_marker_38ddc6a2a973b5d474547b0fe7d466c4 = L.circleMarker(
+                [42.33591604918919, -71.07068654845077],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.44595933456561926, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9191866913123845, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_1fffae90601d75d85c685da6ef158d6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9be6f613a98e2338c29218508e848b1b = $(`<div id="html_9be6f613a98e2338c29218508e848b1b" style="width: 100.0%; height: 100.0%;">ALBANY ST: 2072 crimes</div>`)[0];
+                popup_1fffae90601d75d85c685da6ef158d6b.setContent(html_9be6f613a98e2338c29218508e848b1b);
+            
+        
+
+        circle_marker_38ddc6a2a973b5d474547b0fe7d466c4.bindPopup(popup_1fffae90601d75d85c685da6ef158d6b)
+        ;
+
+        
+    
+    
+            var circle_marker_2ca14bcae4f5813e3d0957340e17abfa = L.circleMarker(
+                [42.37131726644591, -71.03872790156218],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4438743068391867, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.877486136783734, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_0960fc2ec39bce73e37d0f1f24fb8d24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7143402ba830ccd9d1a5d57e42060c0 = $(`<div id="html_f7143402ba830ccd9d1a5d57e42060c0" style="width: 100.0%; height: 100.0%;">PARIS ST: 1978 crimes</div>`)[0];
+                popup_0960fc2ec39bce73e37d0f1f24fb8d24.setContent(html_f7143402ba830ccd9d1a5d57e42060c0);
+            
+        
+
+        circle_marker_2ca14bcae4f5813e3d0957340e17abfa.bindPopup(popup_0960fc2ec39bce73e37d0f1f24fb8d24)
+        ;
+
+        
+    
+    
+            var circle_marker_d7961e7ad8274ec9d543fb1e1618b1ec = L.circleMarker(
+                [42.343799816014204, -71.06237016426978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.44374121996303145, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8748243992606284, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_0567f2e3ebb7f8ac778c51d92ab461a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4675aa7073386b8e1e0807155a5d6cd = $(`<div id="html_c4675aa7073386b8e1e0807155a5d6cd" style="width: 100.0%; height: 100.0%;">SUMMER ST: 1972 crimes</div>`)[0];
+                popup_0567f2e3ebb7f8ac778c51d92ab461a0.setContent(html_c4675aa7073386b8e1e0807155a5d6cd);
+            
+        
+
+        circle_marker_d7961e7ad8274ec9d543fb1e1618b1ec.bindPopup(popup_0567f2e3ebb7f8ac778c51d92ab461a0)
+        ;
+
+        
+    
+    
+            var circle_marker_acee658a80ea641276ab895a95134119 = L.circleMarker(
+                [42.377548357153245, -71.04036929072727],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.44269870609981515, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.853974121996303, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_48c4f35a1e63bde5d8488095e0fb9b13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_167f734405f0e896c5239d8a5303c8ad = $(`<div id="html_167f734405f0e896c5239d8a5303c8ad" style="width: 100.0%; height: 100.0%;">BORDER ST: 1925 crimes</div>`)[0];
+                popup_48c4f35a1e63bde5d8488095e0fb9b13.setContent(html_167f734405f0e896c5239d8a5303c8ad);
+            
+        
+
+        circle_marker_acee658a80ea641276ab895a95134119.bindPopup(popup_48c4f35a1e63bde5d8488095e0fb9b13)
+        ;
+
+        
+    
+    
+            var circle_marker_c6c18091104e149ef2c68462cafbdfe4 = L.circleMarker(
+                [42.31535376364116, -71.0626374305752],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.44203327171903883, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8406654343807762, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_21fd5927612b7ffc10d4d55d23d679d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1e1375b3e043f7ccd0b0d09097333f6 = $(`<div id="html_e1e1375b3e043f7ccd0b0d09097333f6" style="width: 100.0%; height: 100.0%;">HANCOCK ST: 1895 crimes</div>`)[0];
+                popup_21fd5927612b7ffc10d4d55d23d679d0.setContent(html_e1e1375b3e043f7ccd0b0d09097333f6);
+            
+        
+
+        circle_marker_c6c18091104e149ef2c68462cafbdfe4.bindPopup(popup_21fd5927612b7ffc10d4d55d23d679d0)
+        ;
+
+        
+    
+    
+            var circle_marker_f582016430ec99b9eb6b000fe3196a37 = L.circleMarker(
+                [42.2837970413074, -71.08330520746624],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4410573012939002, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8211460258780034, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_0da82451c894ba0a92ece6e3e970b8b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d01655ae1a2165b6dd891ca7e399228f = $(`<div id="html_d01655ae1a2165b6dd891ca7e399228f" style="width: 100.0%; height: 100.0%;">NORFOLK ST: 1851 crimes</div>`)[0];
+                popup_0da82451c894ba0a92ece6e3e970b8b1.setContent(html_d01655ae1a2165b6dd891ca7e399228f);
+            
+        
+
+        circle_marker_f582016430ec99b9eb6b000fe3196a37.bindPopup(popup_0da82451c894ba0a92ece6e3e970b8b1)
+        ;
+
+        
+    
+    
+            var circle_marker_63335fed06b0f1185df0b7a70981c7a3 = L.circleMarker(
+                [42.32737775390396, -71.0625398342599],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4392606284658041, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7852125693160814, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_986998777d2da8231f6716cdcb91a002 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1d9293d7acbd88960401202a43366da = $(`<div id="html_c1d9293d7acbd88960401202a43366da" style="width: 100.0%; height: 100.0%;">ALLSTATE RD: 1770 crimes</div>`)[0];
+                popup_986998777d2da8231f6716cdcb91a002.setContent(html_c1d9293d7acbd88960401202a43366da);
+            
+        
+
+        circle_marker_63335fed06b0f1185df0b7a70981c7a3.bindPopup(popup_986998777d2da8231f6716cdcb91a002)
+        ;
+
+        
+    
+    
+            var circle_marker_3ce59379d08908cad489f91fb9e035a8 = L.circleMarker(
+                [42.290773680828856, -71.07410593269529],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.43719778188539743, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7439556377079484, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_4f61fa3f5aa72074718e34ed6ff5cdf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c99b3c27588e88f826bd34116373f98c = $(`<div id="html_c99b3c27588e88f826bd34116373f98c" style="width: 100.0%; height: 100.0%;">TALBOT AVE: 1677 crimes</div>`)[0];
+                popup_4f61fa3f5aa72074718e34ed6ff5cdf0.setContent(html_c99b3c27588e88f826bd34116373f98c);
+            
+        
+
+        circle_marker_3ce59379d08908cad489f91fb9e035a8.bindPopup(popup_4f61fa3f5aa72074718e34ed6ff5cdf0)
+        ;
+
+        
+    
+    
+            var circle_marker_c6ab5a05ffcdbd3217b064c4f25776bc = L.circleMarker(
+                [42.27491711533899, -71.10884475475787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4366432532347505, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7328650646950092, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_1768d11c695c78ef5e8c425f33d6f666 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d79878e96d7db354c73aab121af8410f = $(`<div id="html_d79878e96d7db354c73aab121af8410f" style="width: 100.0%; height: 100.0%;">CUMMINS HWY: 1652 crimes</div>`)[0];
+                popup_1768d11c695c78ef5e8c425f33d6f666.setContent(html_d79878e96d7db354c73aab121af8410f);
+            
+        
+
+        circle_marker_c6ab5a05ffcdbd3217b064c4f25776bc.bindPopup(popup_1768d11c695c78ef5e8c425f33d6f666)
+        ;
+
+        
+    
+    
+            var circle_marker_84c60f296c3bae59e02538e81d332653 = L.circleMarker(
+                [42.28338243455434, -71.0878188759707],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4363327171903882, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7266543438077635, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_9fea83d3b51955fc899ead27122d4e9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0956cbde10ea657bcf7bcea7610ac29b = $(`<div id="html_0956cbde10ea657bcf7bcea7610ac29b" style="width: 100.0%; height: 100.0%;">MORTON ST: 1638 crimes</div>`)[0];
+                popup_9fea83d3b51955fc899ead27122d4e9d.setContent(html_0956cbde10ea657bcf7bcea7610ac29b);
+            
+        
+
+        circle_marker_84c60f296c3bae59e02538e81d332653.bindPopup(popup_9fea83d3b51955fc899ead27122d4e9d)
+        ;
+
+        
+    
+    
+            var circle_marker_f4748536ea1e5bcd08f4affe27cc649e = L.circleMarker(
+                [42.31565405121554, -71.06884613792606],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.43540110905730134, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.708022181146026, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_a0d979fd8eae68e58ef36b26514731ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65c7618a17760ca5c2d6ae52eec35c27 = $(`<div id="html_65c7618a17760ca5c2d6ae52eec35c27" style="width: 100.0%; height: 100.0%;">PARK ST: 1596 crimes</div>`)[0];
+                popup_a0d979fd8eae68e58ef36b26514731ef.setContent(html_65c7618a17760ca5c2d6ae52eec35c27);
+            
+        
+
+        circle_marker_f4748536ea1e5bcd08f4affe27cc649e.bindPopup(popup_a0d979fd8eae68e58ef36b26514731ef)
+        ;
+
+        
+    
+    
+            var circle_marker_6f0cf8b758f4955be0a09e8d8a961018 = L.circleMarker(
+                [42.335542835851946, -71.07020343678366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.43475785582255083, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.695157116451017, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_9375eaf5740b11dcd29bf14450259aea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4aa6488e291519749a8e6fa087e3a06d = $(`<div id="html_4aa6488e291519749a8e6fa087e3a06d" style="width: 100.0%; height: 100.0%;">CHARLES ST: 1567 crimes</div>`)[0];
+                popup_9375eaf5740b11dcd29bf14450259aea.setContent(html_4aa6488e291519749a8e6fa087e3a06d);
+            
+        
+
+        circle_marker_6f0cf8b758f4955be0a09e8d8a961018.bindPopup(popup_9375eaf5740b11dcd29bf14450259aea)
+        ;
+
+        
+    
+    
+            var circle_marker_bd547d8bee680306faf9daf875d2c1ac = L.circleMarker(
+                [42.3317811536095, -71.06849898425176],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4345360443622921, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.690720887245841, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_f4dbb884b74b8ab84c322185c301eb46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5133325d272c95b6d65d86a85be8f71f = $(`<div id="html_5133325d272c95b6d65d86a85be8f71f" style="width: 100.0%; height: 100.0%;">SOUTHAMPTON ST: 1557 crimes</div>`)[0];
+                popup_f4dbb884b74b8ab84c322185c301eb46.setContent(html_5133325d272c95b6d65d86a85be8f71f);
+            
+        
+
+        circle_marker_bd547d8bee680306faf9daf875d2c1ac.bindPopup(popup_f4dbb884b74b8ab84c322185c301eb46)
+        ;
+
+        
+    
+    
+            var circle_marker_e72e14f5d83548323f116f72a188bbd5 = L.circleMarker(
+                [42.381352054407806, -71.02135111160835],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.43296118299445474, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6592236598890944, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_e5fc7f0918fa9abcb422abc3a200da44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4ffea4b4792cf706664c7298929a881 = $(`<div id="html_a4ffea4b4792cf706664c7298929a881" style="width: 100.0%; height: 100.0%;">BENNINGTON ST: 1486 crimes</div>`)[0];
+                popup_e5fc7f0918fa9abcb422abc3a200da44.setContent(html_a4ffea4b4792cf706664c7298929a881);
+            
+        
+
+        circle_marker_e72e14f5d83548323f116f72a188bbd5.bindPopup(popup_e5fc7f0918fa9abcb422abc3a200da44)
+        ;
+
+        
+    
+    
+            var circle_marker_0594785fd41624bd0470f829bb9b7efb = L.circleMarker(
+                [42.337581378936314, -71.07720805443088],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.43273937153419595, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6547874306839185, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_a23b9a388235f79e2e551a27ba329063 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0774706a56d295f74c7cdb1954fdef7 = $(`<div id="html_a0774706a56d295f74c7cdb1954fdef7" style="width: 100.0%; height: 100.0%;">SHAWMUT AVE: 1476 crimes</div>`)[0];
+                popup_a23b9a388235f79e2e551a27ba329063.setContent(html_a0774706a56d295f74c7cdb1954fdef7);
+            
+        
+
+        circle_marker_0594785fd41624bd0470f829bb9b7efb.bindPopup(popup_a23b9a388235f79e2e551a27ba329063)
+        ;
+
+        
+    
+    
+            var circle_marker_d9f4f0572f763e2d1666e1bd5ceab903 = L.circleMarker(
+                [42.29690739778339, -71.08538826233935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.43072088724584107, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6144177449168207, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_433648711d110f4c0c703871765fe720 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aac0c543c613fbaa1f14b64f35f385da = $(`<div id="html_aac0c543c613fbaa1f14b64f35f385da" style="width: 100.0%; height: 100.0%;">HARVARD ST: 1385 crimes</div>`)[0];
+                popup_433648711d110f4c0c703871765fe720.setContent(html_aac0c543c613fbaa1f14b64f35f385da);
+            
+        
+
+        circle_marker_d9f4f0572f763e2d1666e1bd5ceab903.bindPopup(popup_433648711d110f4c0c703871765fe720)
+        ;
+
+        
+    
+    
+            var circle_marker_4726b5146c763a0b4f374d9fe85a20e3 = L.circleMarker(
+                [42.381753444858234, -71.0203003128046],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4289463955637708, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.578927911275416, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_cf1954de3185ace29dc6b298e41e6f7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fea2e8a42ed0c45285ebb118f19fd3c3 = $(`<div id="html_fea2e8a42ed0c45285ebb118f19fd3c3" style="width: 100.0%; height: 100.0%;">SARATOGA ST: 1305 crimes</div>`)[0];
+                popup_cf1954de3185ace29dc6b298e41e6f7a.setContent(html_fea2e8a42ed0c45285ebb118f19fd3c3);
+            
+        
+
+        circle_marker_4726b5146c763a0b4f374d9fe85a20e3.bindPopup(popup_cf1954de3185ace29dc6b298e41e6f7a)
+        ;
+
+        
+    
+    
+            var circle_marker_4f96839f57c554011fa30d73a3d81f8e = L.circleMarker(
+                [42.32946379827922, -71.09833031314936],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4273271719038817, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.546543438077634, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_6f3ef674bcea95f8fc5ffae3f38e851d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d377949ecddd935653528306a8fab75 = $(`<div id="html_1d377949ecddd935653528306a8fab75" style="width: 100.0%; height: 100.0%;">PARKER ST: 1232 crimes</div>`)[0];
+                popup_6f3ef674bcea95f8fc5ffae3f38e851d.setContent(html_1d377949ecddd935653528306a8fab75);
+            
+        
+
+        circle_marker_4f96839f57c554011fa30d73a3d81f8e.bindPopup(popup_6f3ef674bcea95f8fc5ffae3f38e851d)
+        ;
+
+        
+    
+    
+            var circle_marker_d72313906a4d1bf7c4d6ffa478c9ad61 = L.circleMarker(
+                [42.35519977614321, -71.05361947601303],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4272606284658041, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5452125693160816, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_3df9d4197ca582c4649d4e4aca9aac2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e6442a03c0ca65c5b799835fc91e4c6 = $(`<div id="html_2e6442a03c0ca65c5b799835fc91e4c6" style="width: 100.0%; height: 100.0%;">ATLANTIC AVE: 1229 crimes</div>`)[0];
+                popup_3df9d4197ca582c4649d4e4aca9aac2c.setContent(html_2e6442a03c0ca65c5b799835fc91e4c6);
+            
+        
+
+        circle_marker_d72313906a4d1bf7c4d6ffa478c9ad61.bindPopup(popup_3df9d4197ca582c4649d4e4aca9aac2c)
+        ;
+
+        
+    
+    
+            var circle_marker_94561a9ee63a65259f8dca93e6634c36 = L.circleMarker(
+                [42.335833459957264, -71.07752598213675],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42595194085027727, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.519038817005545, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_e3b9c8cc2647a73f18d586cf6cb73d2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2c5f3a95688a4e78516c0f4899b33f4 = $(`<div id="html_e2c5f3a95688a4e78516c0f4899b33f4" style="width: 100.0%; height: 100.0%;">NORTHAMPTON ST: 1170 crimes</div>`)[0];
+                popup_e3b9c8cc2647a73f18d586cf6cb73d2b.setContent(html_e2c5f3a95688a4e78516c0f4899b33f4);
+            
+        
+
+        circle_marker_94561a9ee63a65259f8dca93e6634c36.bindPopup(popup_e3b9c8cc2647a73f18d586cf6cb73d2b)
+        ;
+
+        
+    
+    
+            var circle_marker_829b5af274160e311a8f94a1745e9330 = L.circleMarker(
+                [42.30121532316926, -71.04842098433507],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42568576709796674, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5137153419593345, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_da60c4870a924ed53f89e9ed7db0129c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6e7e344670260dd8f89f76647f74f85 = $(`<div id="html_e6e7e344670260dd8f89f76647f74f85" style="width: 100.0%; height: 100.0%;">WILLIAM T MORRISSEY BLVD: 1158 crimes</div>`)[0];
+                popup_da60c4870a924ed53f89e9ed7db0129c.setContent(html_e6e7e344670260dd8f89f76647f74f85);
+            
+        
+
+        circle_marker_829b5af274160e311a8f94a1745e9330.bindPopup(popup_da60c4870a924ed53f89e9ed7db0129c)
+        ;
+
+        
+    
+    
+            var circle_marker_3195672c4827d8337215a82efc35e92f = L.circleMarker(
+                [42.35296569089888, -71.13191904991356],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42566358595194087, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.513271719038817, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_8e0141486e8879280e988d3382a1fa97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2c00fc83621e5e8389a81b6229ef6c0 = $(`<div id="html_f2c00fc83621e5e8389a81b6229ef6c0" style="width: 100.0%; height: 100.0%;">BRIGHTON AVE: 1157 crimes</div>`)[0];
+                popup_8e0141486e8879280e988d3382a1fa97.setContent(html_f2c00fc83621e5e8389a81b6229ef6c0);
+            
+        
+
+        circle_marker_3195672c4827d8337215a82efc35e92f.bindPopup(popup_8e0141486e8879280e988d3382a1fa97)
+        ;
+
+        
+    
+    
+            var circle_marker_60cdc5aeb9759cfc196c2628e97c3f07 = L.circleMarker(
+                [42.35071420289868, -71.06653768101322],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42517560073937155, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5035120147874306, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_b1db5bb3fc4797bd76ff006ba9489e84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b53c2259552eefd2ec326b65885d5df = $(`<div id="html_7b53c2259552eefd2ec326b65885d5df" style="width: 100.0%; height: 100.0%;">STUART ST: 1135 crimes</div>`)[0];
+                popup_b1db5bb3fc4797bd76ff006ba9489e84.setContent(html_7b53c2259552eefd2ec326b65885d5df);
+            
+        
+
+        circle_marker_60cdc5aeb9759cfc196c2628e97c3f07.bindPopup(popup_b1db5bb3fc4797bd76ff006ba9489e84)
+        ;
+
+        
+    
+    
+            var circle_marker_59c39eebeac744dc2b9bddc5c7114c9e = L.circleMarker(
+                [42.30852244396994, -71.08759714167992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.425086876155268, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5017375231053602, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_f51a256b5ba683448475c5a18d16a818 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99d4f4b82ab73496ba86f728a589d561 = $(`<div id="html_99d4f4b82ab73496ba86f728a589d561" style="width: 100.0%; height: 100.0%;">SEAVER ST: 1131 crimes</div>`)[0];
+                popup_f51a256b5ba683448475c5a18d16a818.setContent(html_99d4f4b82ab73496ba86f728a589d561);
+            
+        
+
+        circle_marker_59c39eebeac744dc2b9bddc5c7114c9e.bindPopup(popup_f51a256b5ba683448475c5a18d16a818)
+        ;
+
+        
+    
+    
+            var circle_marker_fa59ebf037af1f7ff840e2c23d03eeac = L.circleMarker(
+                [42.344369985874444, -71.10152462757847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.424731977818854, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4946395563770793, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_f7762d824e90865d8ee4ee3213d9ba6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a96e7517f124d392634b9c0640a66e3e = $(`<div id="html_a96e7517f124d392634b9c0640a66e3e" style="width: 100.0%; height: 100.0%;">BROOKLINE AVE: 1115 crimes</div>`)[0];
+                popup_f7762d824e90865d8ee4ee3213d9ba6c.setContent(html_a96e7517f124d392634b9c0640a66e3e);
+            
+        
+
+        circle_marker_fa59ebf037af1f7ff840e2c23d03eeac.bindPopup(popup_f7762d824e90865d8ee4ee3213d9ba6c)
+        ;
+
+        
+    
+    
+            var circle_marker_dd92066f20b59e458eb93eb6ae8dae4d = L.circleMarker(
+                [42.34911084149171, -71.06234351475138],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4240887245841035, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4817744916820703, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_9753efac243234bb41a033555cd8efa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10e0356b7057fb0549b169ddc066f155 = $(`<div id="html_10e0356b7057fb0549b169ddc066f155" style="width: 100.0%; height: 100.0%;">WINTER ST: 1086 crimes</div>`)[0];
+                popup_9753efac243234bb41a033555cd8efa5.setContent(html_10e0356b7057fb0549b169ddc066f155);
+            
+        
+
+        circle_marker_dd92066f20b59e458eb93eb6ae8dae4d.bindPopup(popup_9753efac243234bb41a033555cd8efa5)
+        ;
+
+        
+    
+    
+            var circle_marker_c764661d0a146c6905c53639e83f2f01 = L.circleMarker(
+                [42.317327207253456, -71.09116670325345],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42406654343807765, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4813308687615527, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_af2e1e168c18a86f91229043f672fc05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21205c64b103e86ba9ed5a0add9e770e = $(`<div id="html_21205c64b103e86ba9ed5a0add9e770e" style="width: 100.0%; height: 100.0%;">WALNUT AVE: 1085 crimes</div>`)[0];
+                popup_af2e1e168c18a86f91229043f672fc05.setContent(html_21205c64b103e86ba9ed5a0add9e770e);
+            
+        
+
+        circle_marker_c764661d0a146c6905c53639e83f2f01.bindPopup(popup_af2e1e168c18a86f91229043f672fc05)
+        ;
+
+        
+    
+    
+            var circle_marker_d6bc3c2ed3ccdbe9bddc9b3d4c255496 = L.circleMarker(
+                [42.282207995, -71.05623223468402],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4238669131238448, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.477338262476895, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_bbbe0374626651f9e41d5bb190526c36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad13e5820cf2fd272fddb5a8a379c41b = $(`<div id="html_ad13e5820cf2fd272fddb5a8a379c41b" style="width: 100.0%; height: 100.0%;">GALLIVAN BLVD: 1076 crimes</div>`)[0];
+                popup_bbbe0374626651f9e41d5bb190526c36.setContent(html_ad13e5820cf2fd272fddb5a8a379c41b);
+            
+        
+
+        circle_marker_d6bc3c2ed3ccdbe9bddc9b3d4c255496.bindPopup(popup_bbbe0374626651f9e41d5bb190526c36)
+        ;
+
+        
+    
+    
+            var circle_marker_89a9d6c2ae6518841aea55b08e34649f = L.circleMarker(
+                [42.37605565536218, -71.03431499779869],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42357855822550833, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4715711645101663, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_f3077362a3e7817ea7bbc6f1a5aca2e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_076726bb086f30ed249249563982d4dd = $(`<div id="html_076726bb086f30ed249249563982d4dd" style="width: 100.0%; height: 100.0%;">CHELSEA ST: 1063 crimes</div>`)[0];
+                popup_f3077362a3e7817ea7bbc6f1a5aca2e1.setContent(html_076726bb086f30ed249249563982d4dd);
+            
+        
+
+        circle_marker_89a9d6c2ae6518841aea55b08e34649f.bindPopup(popup_f3077362a3e7817ea7bbc6f1a5aca2e1)
+        ;
+
+        
+    
+    
+            var circle_marker_332f4b21198dda163655d866e52d1be8 = L.circleMarker(
+                [42.3335440352587, -71.0755668115522],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42357855822550833, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4715711645101663, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_35b7b6bf1431a96eee48106e3393a591 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb34116024f4433ac6325bf7e874b505 = $(`<div id="html_cb34116024f4433ac6325bf7e874b505" style="width: 100.0%; height: 100.0%;">SCHOOL ST: 1063 crimes</div>`)[0];
+                popup_35b7b6bf1431a96eee48106e3393a591.setContent(html_cb34116024f4433ac6325bf7e874b505);
+            
+        
+
+        circle_marker_332f4b21198dda163655d866e52d1be8.bindPopup(popup_35b7b6bf1431a96eee48106e3393a591)
+        ;
+
+        
+    
+    
+            var circle_marker_49ab5bae369ae06b8e02408dbdba3231 = L.circleMarker(
+                [42.27752286895382, -71.16921786825637],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4235341959334566, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.470683918669131, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_3f789ce1d7e1f4642d9150a412c3dc38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ebb355253429fcbe8ec0cb490d58320 = $(`<div id="html_3ebb355253429fcbe8ec0cb490d58320" style="width: 100.0%; height: 100.0%;">VFW PKWY: 1061 crimes</div>`)[0];
+                popup_3f789ce1d7e1f4642d9150a412c3dc38.setContent(html_3ebb355253429fcbe8ec0cb490d58320);
+            
+        
+
+        circle_marker_49ab5bae369ae06b8e02408dbdba3231.bindPopup(popup_3f789ce1d7e1f4642d9150a412c3dc38)
+        ;
+
+        
+    
+    
+            var circle_marker_c1aa5f8820abce97bb33389016e84690 = L.circleMarker(
+                [42.374161325704826, -71.05699114217597],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42344547134935306, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.468909426987061, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_97460997b43d9b6cb4339d7fb57b1139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30b17e2842d7a6b49e43b58ae010056c = $(`<div id="html_30b17e2842d7a6b49e43b58ae010056c" style="width: 100.0%; height: 100.0%;">VINE ST: 1057 crimes</div>`)[0];
+                popup_97460997b43d9b6cb4339d7fb57b1139.setContent(html_30b17e2842d7a6b49e43b58ae010056c);
+            
+        
+
+        circle_marker_c1aa5f8820abce97bb33389016e84690.bindPopup(popup_97460997b43d9b6cb4339d7fb57b1139)
+        ;
+
+        
+    
+    
+            var circle_marker_750fa5c118f7df3715f986b43a23e011 = L.circleMarker(
+                [42.32701868343023, -71.08053196696704],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42289094269870614, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.457818853974122, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_afe1ff38589d192fcd6044c5862466d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de5d0207589ab48c5900643facb8697a = $(`<div id="html_de5d0207589ab48c5900643facb8697a" style="width: 100.0%; height: 100.0%;">GREENVILLE ST: 1032 crimes</div>`)[0];
+                popup_afe1ff38589d192fcd6044c5862466d9.setContent(html_de5d0207589ab48c5900643facb8697a);
+            
+        
+
+        circle_marker_750fa5c118f7df3715f986b43a23e011.bindPopup(popup_afe1ff38589d192fcd6044c5862466d9)
+        ;
+
+        
+    
+    
+            var circle_marker_e50dac8e1d0ddda05ffe4d062e28995e = L.circleMarker(
+                [42.35926951416913, -71.05409336421829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42255822550831795, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4511645101663584, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_b0c028467aa485fe183fb95b277e0ac2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6be21aa539ba574fa9894b771dddaaa = $(`<div id="html_a6be21aa539ba574fa9894b771dddaaa" style="width: 100.0%; height: 100.0%;">STATE ST: 1017 crimes</div>`)[0];
+                popup_b0c028467aa485fe183fb95b277e0ac2.setContent(html_a6be21aa539ba574fa9894b771dddaaa);
+            
+        
+
+        circle_marker_e50dac8e1d0ddda05ffe4d062e28995e.bindPopup(popup_b0c028467aa485fe183fb95b277e0ac2)
+        ;
+
+        
+    
+    
+            var circle_marker_fe0e385ffd04f91cf363611d6928ecfc = L.circleMarker(
+                [42.3478006456056, -71.07620822271271],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42215896487985216, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4431792975970428, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_67fc07511748e6654b3d5cd0d35c0984 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce6fbd04e476eaae65c2b7e01aae9e40 = $(`<div id="html_ce6fbd04e476eaae65c2b7e01aae9e40" style="width: 100.0%; height: 100.0%;">DARTMOUTH ST: 999 crimes</div>`)[0];
+                popup_67fc07511748e6654b3d5cd0d35c0984.setContent(html_ce6fbd04e476eaae65c2b7e01aae9e40);
+            
+        
+
+        circle_marker_fe0e385ffd04f91cf363611d6928ecfc.bindPopup(popup_67fc07511748e6654b3d5cd0d35c0984)
+        ;
+
+        
+    
+    
+            var circle_marker_8409cd94920f67187ca947d5c12e71af = L.circleMarker(
+                [42.376754809096504, -71.03914158445585],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4216044362292052, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4320887245841036, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_a230b020646bd0baa689c9335666a284 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bb5a8ff098a14d28dfca4b5e88ac7d4 = $(`<div id="html_6bb5a8ff098a14d28dfca4b5e88ac7d4" style="width: 100.0%; height: 100.0%;">MERIDIAN ST: 974 crimes</div>`)[0];
+                popup_a230b020646bd0baa689c9335666a284.setContent(html_6bb5a8ff098a14d28dfca4b5e88ac7d4);
+            
+        
+
+        circle_marker_8409cd94920f67187ca947d5c12e71af.bindPopup(popup_a230b020646bd0baa689c9335666a284)
+        ;
+
+        
+    
+    
+            var circle_marker_d9984699299b944131382b378a813f6e = L.circleMarker(
+                [42.335670992053664, -71.12540208038185],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4214935304990758, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4298706099815157, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_4c0c704ed60ad115ccdc0c144f529156 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bf6953ce9fa20f44b7e7aae3d3dbdb1 = $(`<div id="html_3bf6953ce9fa20f44b7e7aae3d3dbdb1" style="width: 100.0%; height: 100.0%;">HARVARD AVE: 969 crimes</div>`)[0];
+                popup_4c0c704ed60ad115ccdc0c144f529156.setContent(html_3bf6953ce9fa20f44b7e7aae3d3dbdb1);
+            
+        
+
+        circle_marker_d9984699299b944131382b378a813f6e.bindPopup(popup_4c0c704ed60ad115ccdc0c144f529156)
+        ;
+
+        
+    
+    
+            var circle_marker_7cf3dd6068fb48998b7790301be9488a = L.circleMarker(
+                [42.33559305385983, -71.03775583262554],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4212051756007394, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4241035120147876, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_e856abae1d8734a763163f2bac8bb697 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_998079b55f7a341db7fb6577a40070cf = $(`<div id="html_998079b55f7a341db7fb6577a40070cf" style="width: 100.0%; height: 100.0%;">E BROADWAY: 956 crimes</div>`)[0];
+                popup_e856abae1d8734a763163f2bac8bb697.setContent(html_998079b55f7a341db7fb6577a40070cf);
+            
+        
+
+        circle_marker_7cf3dd6068fb48998b7790301be9488a.bindPopup(popup_e856abae1d8734a763163f2bac8bb697)
+        ;
+
+        
+    
+    
+            var circle_marker_6b39ea3d7feae9ba17de009cf1666600 = L.circleMarker(
+                [42.36371939827186, -71.05479606344574],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42104990757855826, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4209981515711645, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_b9ceb7c53f1c90757c5c11e61a127eaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b36ce4a26af37e74119389407daaebb7 = $(`<div id="html_b36ce4a26af37e74119389407daaebb7" style="width: 100.0%; height: 100.0%;">HANOVER ST: 949 crimes</div>`)[0];
+                popup_b9ceb7c53f1c90757c5c11e61a127eaf.setContent(html_b36ce4a26af37e74119389407daaebb7);
+            
+        
+
+        circle_marker_6b39ea3d7feae9ba17de009cf1666600.bindPopup(popup_b9ceb7c53f1c90757c5c11e61a127eaf)
+        ;
+
+        
+    
+    
+            var circle_marker_10132653b1e656c1eefc0acdbf8bbb18 = L.circleMarker(
+                [42.286615426275134, -71.06125170573544],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.42096118299445473, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.419223659889094, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_66534c60ad199c4ff96dee8529fc7ead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b7b6f16ac3c4a3314dd4efb3cf7c8ac = $(`<div id="html_7b7b6f16ac3c4a3314dd4efb3cf7c8ac" style="width: 100.0%; height: 100.0%;">NEPONSET AVE: 945 crimes</div>`)[0];
+                popup_66534c60ad199c4ff96dee8529fc7ead.setContent(html_7b7b6f16ac3c4a3314dd4efb3cf7c8ac);
+            
+        
+
+        circle_marker_10132653b1e656c1eefc0acdbf8bbb18.bindPopup(popup_66534c60ad199c4ff96dee8529fc7ead)
+        ;
+
+        
+    
+    
+            var circle_marker_9bccc04022f9f60392a7a89275a9debc = L.circleMarker(
+                [42.32936253239014, -71.05337902086816],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4206950092421442, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4139001848428836, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_b3ba54fa2c1b97fa3a06f5f366a1f01d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbe3921842d8c34dd2695b38e4bec84f = $(`<div id="html_fbe3921842d8c34dd2695b38e4bec84f" style="width: 100.0%; height: 100.0%;">OLD COLONY AVE: 933 crimes</div>`)[0];
+                popup_b3ba54fa2c1b97fa3a06f5f366a1f01d.setContent(html_fbe3921842d8c34dd2695b38e4bec84f);
+            
+        
+
+        circle_marker_9bccc04022f9f60392a7a89275a9debc.bindPopup(popup_b3ba54fa2c1b97fa3a06f5f366a1f01d)
+        ;
+
+        
+    
+    
+            var circle_marker_10d50920105e7167793c3d4b63f8712b = L.circleMarker(
+                [42.310494752557126, -71.1114413152013],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4203844731977819, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.407689463955638, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_b73157aba841229416df00530e7ebdc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71cc51bbebb79c46c5fb49af244b4ada = $(`<div id="html_71cc51bbebb79c46c5fb49af244b4ada" style="width: 100.0%; height: 100.0%;">SOUTH ST: 919 crimes</div>`)[0];
+                popup_b73157aba841229416df00530e7ebdc7.setContent(html_71cc51bbebb79c46c5fb49af244b4ada);
+            
+        
+
+        circle_marker_10d50920105e7167793c3d4b63f8712b.bindPopup(popup_b73157aba841229416df00530e7ebdc7)
+        ;
+
+        
+    
+    
+            var circle_marker_896541b36f94054e14583e644e02a182 = L.circleMarker(
+                [42.33012485810268, -71.05958862283482],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4198743068391867, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.397486136783734, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_62998165d82869f939c492619495058f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56fe0b4d9e2c50a2325d54dc711708ee = $(`<div id="html_56fe0b4d9e2c50a2325d54dc711708ee" style="width: 100.0%; height: 100.0%;">MOUNT VERNON ST: 896 crimes</div>`)[0];
+                popup_62998165d82869f939c492619495058f.setContent(html_56fe0b4d9e2c50a2325d54dc711708ee);
+            
+        
+
+        circle_marker_896541b36f94054e14583e644e02a182.bindPopup(popup_62998165d82869f939c492619495058f)
+        ;
+
+        
+    
+    
+            var circle_marker_91e0ecf7965abfb018ec0cc542aac927 = L.circleMarker(
+                [42.35523364719866, -71.04450278214286],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4198743068391867, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.397486136783734, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_442f37b25c04148ee1987a4377373210 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2becdd5b9da8495cbc435721c3dda2e1 = $(`<div id="html_2becdd5b9da8495cbc435721c3dda2e1" style="width: 100.0%; height: 100.0%;">SUMNER ST: 896 crimes</div>`)[0];
+                popup_442f37b25c04148ee1987a4377373210.setContent(html_2becdd5b9da8495cbc435721c3dda2e1);
+            
+        
+
+        circle_marker_91e0ecf7965abfb018ec0cc542aac927.bindPopup(popup_442f37b25c04148ee1987a4377373210)
+        ;
+
+        
+    
+    
+            var circle_marker_d356ccf2c457a1c2d816eca43390285c = L.circleMarker(
+                [42.314319093340806, -71.08880686204036],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4197855822550832, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3957116451016636, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_440536f132c4b9a7c640976531975b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83dabdd9e9843eba0e46c910889bcd0c = $(`<div id="html_83dabdd9e9843eba0e46c910889bcd0c" style="width: 100.0%; height: 100.0%;">HUMBOLDT AVE: 892 crimes</div>`)[0];
+                popup_440536f132c4b9a7c640976531975b14.setContent(html_83dabdd9e9843eba0e46c910889bcd0c);
+            
+        
+
+        circle_marker_d356ccf2c457a1c2d816eca43390285c.bindPopup(popup_440536f132c4b9a7c640976531975b14)
+        ;
+
+        
+    
+    
+            var circle_marker_40da8e1440017f221bfbcb2a673eb22f = L.circleMarker(
+                [42.312443860532404, -71.07361690304398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41916451016635864, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3832902033271717, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_3fded6a4062c98ea375fea2007e2d4a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe16b5327fa1dc12b9dc1c84397fe87f = $(`<div id="html_fe16b5327fa1dc12b9dc1c84397fe87f" style="width: 100.0%; height: 100.0%;">QUINCY ST: 864 crimes</div>`)[0];
+                popup_3fded6a4062c98ea375fea2007e2d4a7.setContent(html_fe16b5327fa1dc12b9dc1c84397fe87f);
+            
+        
+
+        circle_marker_40da8e1440017f221bfbcb2a673eb22f.bindPopup(popup_3fded6a4062c98ea375fea2007e2d4a7)
+        ;
+
+        
+    
+    
+            var circle_marker_4ae5c34fb11c3790ebdb4236dcaa603a = L.circleMarker(
+                [42.35602363720903, -71.05375063782661],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4186765249537893, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3735304990757857, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_71dd1c3c15ee253b260d27d8a66929a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75ec6f822258a4714667a99e75698b56 = $(`<div id="html_75ec6f822258a4714667a99e75698b56" style="width: 100.0%; height: 100.0%;">CONGRESS ST: 842 crimes</div>`)[0];
+                popup_71dd1c3c15ee253b260d27d8a66929a2.setContent(html_75ec6f822258a4714667a99e75698b56);
+            
+        
+
+        circle_marker_4ae5c34fb11c3790ebdb4236dcaa603a.bindPopup(popup_71dd1c3c15ee253b260d27d8a66929a2)
+        ;
+
+        
+    
+    
+            var circle_marker_2efc0b531123daf44fdd336238f921f2 = L.circleMarker(
+                [42.332886513420426, -71.05080817166271],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4186765249537893, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3735304990757857, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_8283aa1f23562e92416145cfbc9f649b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9117f3b8cf14aacaed18f8b5bb4c7cf3 = $(`<div id="html_9117f3b8cf14aacaed18f8b5bb4c7cf3" style="width: 100.0%; height: 100.0%;">DORCHESTER ST: 842 crimes</div>`)[0];
+                popup_8283aa1f23562e92416145cfbc9f649b.setContent(html_9117f3b8cf14aacaed18f8b5bb4c7cf3);
+            
+        
+
+        circle_marker_2efc0b531123daf44fdd336238f921f2.bindPopup(popup_8283aa1f23562e92416145cfbc9f649b)
+        ;
+
+        
+    
+    
+            var circle_marker_af892acba188d6947908e821cc462370 = L.circleMarker(
+                [42.34821204686369, -71.06000920049458],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41838817005545287, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.367763401109057, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_aab0c22e912c9d7886dee07bba91a2fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9f9a2526738b88debba57ba892c40d0 = $(`<div id="html_e9f9a2526738b88debba57ba892c40d0" style="width: 100.0%; height: 100.0%;">BEACH ST: 829 crimes</div>`)[0];
+                popup_aab0c22e912c9d7886dee07bba91a2fc.setContent(html_e9f9a2526738b88debba57ba892c40d0);
+            
+        
+
+        circle_marker_af892acba188d6947908e821cc462370.bindPopup(popup_aab0c22e912c9d7886dee07bba91a2fc)
+        ;
+
+        
+    
+    
+            var circle_marker_c5128dd22e1782bd870a4e68a8d8623c = L.circleMarker(
+                [42.28198999370138, -71.0720128842409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4176783733826248, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3535674676524954, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_1da184228fb9230cab0b94c452a2f811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cc113332fbdaf6248f51c0de90cf66f = $(`<div id="html_6cc113332fbdaf6248f51c0de90cf66f" style="width: 100.0%; height: 100.0%;">FULLER ST: 797 crimes</div>`)[0];
+                popup_1da184228fb9230cab0b94c452a2f811.setContent(html_6cc113332fbdaf6248f51c0de90cf66f);
+            
+        
+
+        circle_marker_c5128dd22e1782bd870a4e68a8d8623c.bindPopup(popup_1da184228fb9230cab0b94c452a2f811)
+        ;
+
+        
+    
+    
+            var circle_marker_b9ddddd9e75d93a99284025d59cfb918 = L.circleMarker(
+                [42.326313436472084, -71.10405703168782],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4174787430683919, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.349574861367837, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_63260d990c7f07021ed8e8119d717b8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa0aaa09263bf970fd1b452d6b75b9e6 = $(`<div id="html_aa0aaa09263bf970fd1b452d6b75b9e6" style="width: 100.0%; height: 100.0%;">HEATH ST: 788 crimes</div>`)[0];
+                popup_63260d990c7f07021ed8e8119d717b8f.setContent(html_aa0aaa09263bf970fd1b452d6b75b9e6);
+            
+        
+
+        circle_marker_b9ddddd9e75d93a99284025d59cfb918.bindPopup(popup_63260d990c7f07021ed8e8119d717b8f)
+        ;
+
+        
+    
+    
+            var circle_marker_ac6da3e0f27d64710176b0cee1ebc6d3 = L.circleMarker(
+                [42.317092314023284, -71.10229727736093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4171460258780037, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.342920517560074, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_cdb5cd2fd087124ed1cacbcc7cb759a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d05cd59ffac833c4628e89c73a9843d6 = $(`<div id="html_d05cd59ffac833c4628e89c73a9843d6" style="width: 100.0%; height: 100.0%;">AMORY ST: 773 crimes</div>`)[0];
+                popup_cdb5cd2fd087124ed1cacbcc7cb759a1.setContent(html_d05cd59ffac833c4628e89c73a9843d6);
+            
+        
+
+        circle_marker_ac6da3e0f27d64710176b0cee1ebc6d3.bindPopup(popup_cdb5cd2fd087124ed1cacbcc7cb759a1)
+        ;
+
+        
+    
+    
+            var circle_marker_601e3c30bbe9303e564f58597cff1ca8 = L.circleMarker(
+                [42.297663670380075, -71.07827717517694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41692421441774496, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3384842883548984, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_a691c71adf319cdbcac6009664a59124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09b434b1aeed37666c6e595551a8430e = $(`<div id="html_09b434b1aeed37666c6e595551a8430e" style="width: 100.0%; height: 100.0%;">NORWELL ST: 763 crimes</div>`)[0];
+                popup_a691c71adf319cdbcac6009664a59124.setContent(html_09b434b1aeed37666c6e595551a8430e);
+            
+        
+
+        circle_marker_601e3c30bbe9303e564f58597cff1ca8.bindPopup(popup_a691c71adf319cdbcac6009664a59124)
+        ;
+
+        
+    
+    
+            var circle_marker_4b5cfc5cbabdf2288736fdb6c5b07f41 = L.circleMarker(
+                [42.33367918434782, -71.09187746086957],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41683548983364144, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.336709796672828, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_228ecdcaf2d091b642843191ac3b3649 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5633a33dd620780a03fe4ee010d2d1c0 = $(`<div id="html_5633a33dd620780a03fe4ee010d2d1c0" style="width: 100.0%; height: 100.0%;">SCHROEDER PLZ: 759 crimes</div>`)[0];
+                popup_228ecdcaf2d091b642843191ac3b3649.setContent(html_5633a33dd620780a03fe4ee010d2d1c0);
+            
+        
+
+        circle_marker_4b5cfc5cbabdf2288736fdb6c5b07f41.bindPopup(popup_228ecdcaf2d091b642843191ac3b3649)
+        ;
+
+        
+    
+    
+            var circle_marker_1009b3ec1a6dbd3e13a7bad48b63565d = L.circleMarker(
+                [42.33087405815159, -71.09017972146277],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4166802218114603, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.333604436229205, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_fb1b6c826c6c16faae4c018e6533faf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78841b936286b8752551125124e9da2c = $(`<div id="html_78841b936286b8752551125124e9da2c" style="width: 100.0%; height: 100.0%;">MALCOLM X BLVD: 752 crimes</div>`)[0];
+                popup_fb1b6c826c6c16faae4c018e6533faf5.setContent(html_78841b936286b8752551125124e9da2c);
+            
+        
+
+        circle_marker_1009b3ec1a6dbd3e13a7bad48b63565d.bindPopup(popup_fb1b6c826c6c16faae4c018e6533faf5)
+        ;
+
+        
+    
+    
+            var circle_marker_ae189271c39116319b1b6a5806b09b06 = L.circleMarker(
+                [42.329317122929154, -71.095300538297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41628096118299446, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.325619223659889, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_bbcea949998329e00a83fdac39937737 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8af118f66febd7091779da96f389c6f = $(`<div id="html_b8af118f66febd7091779da96f389c6f" style="width: 100.0%; height: 100.0%;">ARLINGTON ST: 734 crimes</div>`)[0];
+                popup_bbcea949998329e00a83fdac39937737.setContent(html_b8af118f66febd7091779da96f389c6f);
+            
+        
+
+        circle_marker_ae189271c39116319b1b6a5806b09b06.bindPopup(popup_bbcea949998329e00a83fdac39937737)
+        ;
+
+        
+    
+    
+            var circle_marker_d2a942fe1c98cef1b250de9e71fc17f1 = L.circleMarker(
+                [42.366435392223735, -71.06135411084584],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4162587800369686, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3251756007393714, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_8fd2512c27944563df3dac979acf5ea7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63babce926fcb2e9cfcb44f8a462183f = $(`<div id="html_63babce926fcb2e9cfcb44f8a462183f" style="width: 100.0%; height: 100.0%;">LEGENDS WAY: 733 crimes</div>`)[0];
+                popup_8fd2512c27944563df3dac979acf5ea7.setContent(html_63babce926fcb2e9cfcb44f8a462183f);
+            
+        
+
+        circle_marker_d2a942fe1c98cef1b250de9e71fc17f1.bindPopup(popup_8fd2512c27944563df3dac979acf5ea7)
+        ;
+
+        
+    
+    
+            var circle_marker_6a0d0b5295c1ccf002b5195852ec1b99 = L.circleMarker(
+                [42.364529540068304, -71.05308632762295],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4162365988909427, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.324731977818854, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_126f6831ed15eb136ad0dadcd5ed58d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2477b41f1d00d442099716d29350eac3 = $(`<div id="html_2477b41f1d00d442099716d29350eac3" style="width: 100.0%; height: 100.0%;">COMMERCIAL ST: 732 crimes</div>`)[0];
+                popup_126f6831ed15eb136ad0dadcd5ed58d1.setContent(html_2477b41f1d00d442099716d29350eac3);
+            
+        
+
+        circle_marker_6a0d0b5295c1ccf002b5195852ec1b99.bindPopup(popup_126f6831ed15eb136ad0dadcd5ed58d1)
+        ;
+
+        
+    
+    
+            var circle_marker_3b69c79ab3c25da5949f8ed2a9bba9a2 = L.circleMarker(
+                [42.36523937479452, -71.06159997350686],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.416192236598891, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.323844731977819, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_e805ed2ea5627056f7f42d42c5e44ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7017ca27c48e8853b3f599e0c3cf2cb = $(`<div id="html_d7017ca27c48e8853b3f599e0c3cf2cb" style="width: 100.0%; height: 100.0%;">CAUSEWAY ST: 730 crimes</div>`)[0];
+                popup_e805ed2ea5627056f7f42d42c5e44ba5.setContent(html_d7017ca27c48e8853b3f599e0c3cf2cb);
+            
+        
+
+        circle_marker_3b69c79ab3c25da5949f8ed2a9bba9a2.bindPopup(popup_e805ed2ea5627056f7f42d42c5e44ba5)
+        ;
+
+        
+    
+    
+            var circle_marker_24dc41e78be26ea708c324e1cf2ba78f = L.circleMarker(
+                [42.337976592821576, -71.10533923073305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4160369685767098, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.320739371534196, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_f76c2410aeebd1f2b8adf13d9253a5f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d503527944b35d090ab54fd264660f93 = $(`<div id="html_d503527944b35d090ab54fd264660f93" style="width: 100.0%; height: 100.0%;">LONGWOOD AVE: 723 crimes</div>`)[0];
+                popup_f76c2410aeebd1f2b8adf13d9253a5f9.setContent(html_d503527944b35d090ab54fd264660f93);
+            
+        
+
+        circle_marker_24dc41e78be26ea708c324e1cf2ba78f.bindPopup(popup_f76c2410aeebd1f2b8adf13d9253a5f9)
+        ;
+
+        
+    
+    
+            var circle_marker_d3be148439d887ed76ec6983d92fc7b6 = L.circleMarker(
+                [42.32521132085674, -71.05929925904495],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41579297597042514, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3158595194085025, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_bc1bde720e6e7adeb46b7fde23e67261 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71028a545d0688f89cd211d30313ca09 = $(`<div id="html_71028a545d0688f89cd211d30313ca09" style="width: 100.0%; height: 100.0%;">BOSTON ST: 712 crimes</div>`)[0];
+                popup_bc1bde720e6e7adeb46b7fde23e67261.setContent(html_71028a545d0688f89cd211d30313ca09);
+            
+        
+
+        circle_marker_d3be148439d887ed76ec6983d92fc7b6.bindPopup(popup_bc1bde720e6e7adeb46b7fde23e67261)
+        ;
+
+        
+    
+    
+            var circle_marker_6c59fe1d1392ccce2487ab366478f0fc = L.circleMarker(
+                [42.3315099412963, -71.04488764317664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4155711645101664, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.311423290203327, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_7a552416827be0aad2d2dbb47e3f8604 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc9d00d226a77031ac2ec0128f116ce1 = $(`<div id="html_bc9d00d226a77031ac2ec0128f116ce1" style="width: 100.0%; height: 100.0%;">E EIGHTH ST: 702 crimes</div>`)[0];
+                popup_7a552416827be0aad2d2dbb47e3f8604.setContent(html_bc9d00d226a77031ac2ec0128f116ce1);
+            
+        
+
+        circle_marker_6c59fe1d1392ccce2487ab366478f0fc.bindPopup(popup_7a552416827be0aad2d2dbb47e3f8604)
+        ;
+
+        
+    
+    
+            var circle_marker_cfb4446ffce5e12620afd437ea896751 = L.circleMarker(
+                [42.37849430230659, -71.06091491153295],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4154824399260629, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.309648798521257, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_6989b393128945b1e9c9dbd194c53755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda4db1d376457546cdbafef2d9f9426 = $(`<div id="html_bda4db1d376457546cdbafef2d9f9426" style="width: 100.0%; height: 100.0%;">BUNKER HILL ST: 698 crimes</div>`)[0];
+                popup_6989b393128945b1e9c9dbd194c53755.setContent(html_bda4db1d376457546cdbafef2d9f9426);
+            
+        
+
+        circle_marker_cfb4446ffce5e12620afd437ea896751.bindPopup(popup_6989b393128945b1e9c9dbd194c53755)
+        ;
+
+        
+    
+    
+            var circle_marker_256b5b6413b599dc237a888ad7ef3635 = L.circleMarker(
+                [42.339577300057385, -71.04994229685796],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.415460258780037, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3092051756007392, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_aba2e4acb9778263590b28c6a05e43a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ea0fe3d06e1331b3966765829821e6e = $(`<div id="html_7ea0fe3d06e1331b3966765829821e6e" style="width: 100.0%; height: 100.0%;">D ST: 697 crimes</div>`)[0];
+                popup_aba2e4acb9778263590b28c6a05e43a6.setContent(html_7ea0fe3d06e1331b3966765829821e6e);
+            
+        
+
+        circle_marker_256b5b6413b599dc237a888ad7ef3635.bindPopup(popup_aba2e4acb9778263590b28c6a05e43a6)
+        ;
+
+        
+    
+    
+            var circle_marker_3c6c89a249cce5f313d9052703f51229 = L.circleMarker(
+                [42.26705076872621, -71.12005845021962],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4151497227356747, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3029944547134935, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_cc1e0db654c55acfb0a4ef79c60bd1c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b36c3d75e64228ffa9f20e1da7b9494b = $(`<div id="html_b36c3d75e64228ffa9f20e1da7b9494b" style="width: 100.0%; height: 100.0%;">METROPOLITAN AVE: 683 crimes</div>`)[0];
+                popup_cc1e0db654c55acfb0a4ef79c60bd1c3.setContent(html_b36c3d75e64228ffa9f20e1da7b9494b);
+            
+        
+
+        circle_marker_3c6c89a249cce5f313d9052703f51229.bindPopup(popup_cc1e0db654c55acfb0a4ef79c60bd1c3)
+        ;
+
+        
+    
+    
+            var circle_marker_c4b3e9e5d768ad5e8fef5d60e578099b = L.circleMarker(
+                [42.33507422531532, -71.09323042938438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41477264325323476, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.295452865064695, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_5173f710c8e36dfd00b4631078bed8d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c0aa87bfbe2d7304c92c470e37c439f = $(`<div id="html_4c0aa87bfbe2d7304c92c470e37c439f" style="width: 100.0%; height: 100.0%;">ANNUNCIATION RD: 666 crimes</div>`)[0];
+                popup_5173f710c8e36dfd00b4631078bed8d2.setContent(html_4c0aa87bfbe2d7304c92c470e37c439f);
+            
+        
+
+        circle_marker_c4b3e9e5d768ad5e8fef5d60e578099b.bindPopup(popup_5173f710c8e36dfd00b4631078bed8d2)
+        ;
+
+        
+    
+    
+            var circle_marker_cb6f1f83a2ffa5d067f3e84a0e2c7de8 = L.circleMarker(
+                [42.35549985006097, -71.14625827053354],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41455083179297597, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2910166358595196, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_154b252b7d7492eb2496db069456ab7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c8f05a1c670e6bc996f00116e21480d = $(`<div id="html_0c8f05a1c670e6bc996f00116e21480d" style="width: 100.0%; height: 100.0%;">N BEACON ST: 656 crimes</div>`)[0];
+                popup_154b252b7d7492eb2496db069456ab7f.setContent(html_0c8f05a1c670e6bc996f00116e21480d);
+            
+        
+
+        circle_marker_cb6f1f83a2ffa5d067f3e84a0e2c7de8.bindPopup(popup_154b252b7d7492eb2496db069456ab7f)
+        ;
+
+        
+    
+    
+            var circle_marker_be17f8120f9d7e4b33f9004d6b2335ca = L.circleMarker(
+                [42.2831427600916, -71.10083922477862],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4145286506469501, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.290573012939002, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_7ebd03e1068f28cf1349f2ea36227f4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bf439616496d059ac826d75b825891a = $(`<div id="html_0bf439616496d059ac826d75b825891a" style="width: 100.0%; height: 100.0%;">WALK HILL ST: 655 crimes</div>`)[0];
+                popup_7ebd03e1068f28cf1349f2ea36227f4f.setContent(html_0bf439616496d059ac826d75b825891a);
+            
+        
+
+        circle_marker_be17f8120f9d7e4b33f9004d6b2335ca.bindPopup(popup_7ebd03e1068f28cf1349f2ea36227f4f)
+        ;
+
+        
+    
+    
+            var circle_marker_340431d1421d715ce84022ebf9a103c6 = L.circleMarker(
+                [42.34927041763358, -71.07207773459542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4145286506469501, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.290573012939002, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_287793ba3e5ba606fce03fd63f7a93fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_209bbf85d5bbf60a277d2987d1619a33 = $(`<div id="html_209bbf85d5bbf60a277d2987d1619a33" style="width: 100.0%; height: 100.0%;">BERKELEY ST: 655 crimes</div>`)[0];
+                popup_287793ba3e5ba606fce03fd63f7a93fb.setContent(html_209bbf85d5bbf60a277d2987d1619a33);
+            
+        
+
+        circle_marker_340431d1421d715ce84022ebf9a103c6.bindPopup(popup_287793ba3e5ba606fce03fd63f7a93fb)
+        ;
+
+        
+    
+    
+            var circle_marker_38be21671eda33b2dcc5e111c7bcfbdd = L.circleMarker(
+                [42.2868386838685, -71.06102877039756],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41450646950092424, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2901293900184845, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_634c067e39dd72287d0ea0cedfc4bded = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c51847417b38a93674f2c9d2b1348fa = $(`<div id="html_5c51847417b38a93674f2c9d2b1348fa" style="width: 100.0%; height: 100.0%;">ASHMONT ST: 654 crimes</div>`)[0];
+                popup_634c067e39dd72287d0ea0cedfc4bded.setContent(html_5c51847417b38a93674f2c9d2b1348fa);
+            
+        
+
+        circle_marker_38be21671eda33b2dcc5e111c7bcfbdd.bindPopup(popup_634c067e39dd72287d0ea0cedfc4bded)
+        ;
+
+        
+    
+    
+            var circle_marker_155e8cf45a5dc127f5a128a5e51207ab = L.circleMarker(
+                [42.35471070068217, -71.15524378407753],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4143068391866913, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2861367837338262, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_759308a7383da3468ff7dee40ff0f11f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cc95340137759292cde9b4ae196380d = $(`<div id="html_2cc95340137759292cde9b4ae196380d" style="width: 100.0%; height: 100.0%;">FANEUIL ST: 645 crimes</div>`)[0];
+                popup_759308a7383da3468ff7dee40ff0f11f.setContent(html_2cc95340137759292cde9b4ae196380d);
+            
+        
+
+        circle_marker_155e8cf45a5dc127f5a128a5e51207ab.bindPopup(popup_759308a7383da3468ff7dee40ff0f11f)
+        ;
+
+        
+    
+    
+            var circle_marker_edad05163690628249d25f538b837b07 = L.circleMarker(
+                [42.3119173711042, -71.09048406446347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4142624768946396, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.285249537892791, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_28fbfee034ddd20a4780dd0da4a15158 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cd435c80b388ca162faf50bcbb38696 = $(`<div id="html_9cd435c80b388ca162faf50bcbb38696" style="width: 100.0%; height: 100.0%;">HOMESTEAD ST: 643 crimes</div>`)[0];
+                popup_28fbfee034ddd20a4780dd0da4a15158.setContent(html_9cd435c80b388ca162faf50bcbb38696);
+            
+        
+
+        circle_marker_edad05163690628249d25f538b837b07.bindPopup(popup_28fbfee034ddd20a4780dd0da4a15158)
+        ;
+
+        
+    
+    
+            var circle_marker_8463e05ef0fefb0ece40489b3c375aac = L.circleMarker(
+                [42.30398502623437, -71.06463391996876],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4141959334565619, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2839186691312383, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_ca3f869ae5e78bc3e88dec3f23f32980 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57ad3c6d7b2f02f651429c4c7a75a21a = $(`<div id="html_57ad3c6d7b2f02f651429c4c7a75a21a" style="width: 100.0%; height: 100.0%;">DRAPER ST: 640 crimes</div>`)[0];
+                popup_ca3f869ae5e78bc3e88dec3f23f32980.setContent(html_57ad3c6d7b2f02f651429c4c7a75a21a);
+            
+        
+
+        circle_marker_8463e05ef0fefb0ece40489b3c375aac.bindPopup(popup_ca3f869ae5e78bc3e88dec3f23f32980)
+        ;
+
+        
+    
+    
+            var circle_marker_dca53491c781636039aa38e54cb9a5df = L.circleMarker(
+                [42.31637795204438, -71.06102562071315],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.41399630314232905, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2799260628465805, "stroke": true, "weight": 3}
+            ).addTo(map_0a71faec01a444c5e6c5ed1a88857dce);
+        
+    
+        var popup_c3e9a77864256efd165686caad34ec64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33414c6e093186c80f0bd5e2fd9f603c = $(`<div id="html_33414c6e093186c80f0bd5e2fd9f603c" style="width: 100.0%; height: 100.0%;">PLEASANT ST: 631 crimes</div>`)[0];
+                popup_c3e9a77864256efd165686caad34ec64.setContent(html_33414c6e093186c80f0bd5e2fd9f603c);
+            
+        
+
+        circle_marker_dca53491c781636039aa38e54cb9a5df.bindPopup(popup_c3e9a77864256efd165686caad34ec64)
+        ;
+
+        
+    
+</script>
+</html>

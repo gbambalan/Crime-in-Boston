@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelAlign": "right", "labelAngle": 45}, "title": {"fontSize": 14, "fontWeight": "normal"}}, "data": {"name": "data-bc1e50cd75e0def7e14947a14cd40a76"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "STREET", "type": "nominal"}, {"field": "Total Crimes", "type": "quantitative"}], "x": {"axis": {"labelAngle": -45, "labelOverlap": false}, "field": "STREET", "sort": "-y", "title": "Street Name", "type": "nominal"}, "y": {"axis": {"labelAngle": 0}, "field": "Total Crimes", "title": "Frequency", "type": "quantitative"}}, "height": 400, "title": "Top 10 Streets with the Most Crime ", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-bc1e50cd75e0def7e14947a14cd40a76": [{"STREET": "WASHINGTON ST", "Total Crimes": 27624}, {"STREET": "BLUE HILL AVE", "Total Crimes": 13876}, {"STREET": "BOYLSTON ST", "Total Crimes": 10517}, {"STREET": "HARRISON AVE", "Total Crimes": 9616}, {"STREET": "CENTRE ST", "Total Crimes": 8153}, {"STREET": "TREMONT ST", "Total Crimes": 7800}, {"STREET": "DORCHESTER AVE", "Total Crimes": 7792}, {"STREET": "MASSACHUSETTS AVE", "Total Crimes": 7396}, {"STREET": "HYDE PARK AVE", "Total Crimes": 6932}, {"STREET": "COMMONWEALTH AVE", "Total Crimes": 6504}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

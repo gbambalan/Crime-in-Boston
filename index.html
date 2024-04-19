@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Boston Crime</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet" />
+
+  </head>
+  <h1>Investigating Crime <br /> In Boston</h1>
+  <h2>Investigators: Gabrielle Bambalan, Rohan Francis, Jackson Goodman, James Hajdenberg</h2>
+  <body>
+    <p>Project Overview: Our project aims to understand the relationship between the severity of a crime and offense to a location in Boston,
+      as we question: How does crime and its severity relate to location in Boston? Through analyzing a large dataset of crimes committed in 
+      Boston in the years 2015-2020, one can observe the patterns or trends of a type of crime in certain locations around the city. 
+      The larger implications of this project can assist law enforcement in properly allocating resources, as well as developing targeted
+      strategies for crime prevention. 
+
+    <iframe src="folium_map.html" width="800" height="600" frameborder="0"></iframe>
+    <p> Figure 1. Using Folium we can visualize the entirety of our dataset. This representation comes in the form of a map of 
+      Boston with a variety of points scattered. Each point represents a crime that occurred between 2015 and 2020. 
+      When hovering over each point, information is revealed, including, Offense Description and District. Users can filter on 
+      specific years using the layer functionality in the top right. In total, a variety of marks and channels are used in this visualization. 
+      The marks are points, as well as the provided tooltip information; and the channels are hue, spatial orientation, and position.</p>
+
+    <iframe src="crime-trends.html" width="800" height="600" frameborder="0"><</iframe>
+    <p>Figure 2. This line chart represents the overall frequency in crimes between the years 2015 and 2020. 
+      The year with the most crimes was 2017 with a maximum of 101338, and the year with the least crimes was 
+      2015 with a minimum of 53597. The years 2016, 2018, and 2019 all have relatively similar crime frequencies 
+      (ranging from 98104 to 99430), while 2020 has a steep drop in crime (going down to 74218). The drop in crime 
+      is likely due to the COVID-19 pandemic, while there is no general explanation as to why crime rate peaked in 2017. 
+      The graph was created using Altair. Though it is a fairly simple plot, it still employs the use 
+      of multiple marks and channels. The marks are lines, connections, and points, while the channels are positioning 
+      and tilt. In conjunction with Figure 1, both visualizations provide a great introduction to the dataset with 
+      contextualizing information.</p>
+
+    <iframe src="frequent-crime-types.html" width="800" height="600" frameborder="0"><</iframe>
+    <p>Figure 3. This bar graph is a representation of the most frequent crime types and offenses from our 
+      dataset. The graph includes the ten most frequent crimes, their titles, and their frequency. 
+      To make the visualization easier to process, we added horizontal lines at every 100 in the data. Users can hover over
+      each bar to reveal the exact number of frequency and crime type. The most frequent crime by 
+      far is Assault, specifically Aggravated Battery. This graph was created using Altair and 
+      has marks as areas in the form of bars and numerals for text. The channels are size and area. This graph is a great 
+      indicator of the most common types of crimes in Boston. 
+    </p>
+
+    <iframe src="scatter-hour-day.html" width="800" height="600" frameborder="0"><</iframe>
+    <p>Figure 4. This scatter plot illustrates specific time of day and week crimes may occur. The x-axis of this graph 
+      is the hour of the day, while the y-axis is the day of the week. Within these points, all 168 hours of a week are 
+      represented by a dot. The dot ranges in opacity and size based on the frequency of crime incidents within the 
+      specific time frame. This graph can help us understand where the highest frequency of crimes occurs in a 
+      typical day and the highest or lowest frequency of crimes occurring in a week. While a city will have a lot 
+      of week-to-week, day-to-day, and hour-to-hour fluctuation in crimes and reporting, it provides general insight 
+      that shows that there is generally more crime during week days and daytime hours. One interesting trend that 
+      can be seen is the larger frequency of crimes from midnight to 2 A.M. during the weekend, both Saturday and Sunday. 
+      This plot has marks that are points, but these points took a large variety of channels to represent. These channels 
+      include color, shape, and size. Once again, the plot contains tooltip information about the day of the week, 
+      the hour of the crime, number of incidents.</p>
+
+    <iframe src="boston_top_100_crime_map.html" width="800" height="600" frameborder="0"><</iframe>
+    <p>Figure 5. Rather than showing all of the crimes that occurred in Boston, each point represents one 
+      street. The street has one point that appears as the average of the latitude and longitude of the crimes on that street.
+      While there are thousands of streets in Boston, the top 100 streets with the highest frequency 
+      of crimes are displayed on the map. The points on the map differ by size based on the count of their crimes between the years of 2015 
+      to 2020. In this case, the largest point is represented by the street with the most crimes, Washington Street. 
+      This map was made possible because of the data cleaning and standardizing processes our group underwent. 
+      In the end, it was made using Folium. It contained marks that are points and tooltip text information. 
+      The channels are size, positioning, and a variety of built-in features included in the Folium map.</p>
+
+    <iframe src="shootings-by-district.html" width="800" height="600" frameborder="0"><</iframe>
+    <p>Figure 6. This bar graph created in plotly further reinforces the magnitude of crime by location that was introduced in 
+      the map in Figure 5. Of the crimes plotted in that map, how many of them had occurrences of a shooting?
+      As the map plotted the number of crimes on each street, this bar graph depicts the violence of such crimes. 
+      The darker the red evident in each bar, the greater number of instances of gun violence that occurred during the crime in a specific 
+      district in Boston. Hover data reveals the exact number of shootings in a district. The use of color as a channel is 
+      effective in calling attention to the district with higher instances of gun use in a committed crime. </p>
+
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <iframe src="d3index.html" width="800" height="600" frameborder="0"><</iframe>
+    <p>Figure 7. While the map from Figure 5 is helpful, this bar chart created in d3 provides further insight with the top ten streets and 
+      their frequency of crimes. This bar chart has marks of bars and highlights a bar upon clicking. The channel used is area. 
+      This chart simply contains the frequency of crimes for the top streets with the most crimes in Boston from 2015 to 2020.</p>
+
+    <p>Conclusions:<p>
+    <p>With all the above visualizations considered, we have found that high frequencies of crime tend to occur in Roxbury
+      and extends to the South End area. The most violent of crimes, however, occur in the neighborhoods of Mattapan and 
+      Fenway/Mission Hill. Our work in analyzing Boston crime data can be a foundation for predictive models to forecast
+      future crimes, especially location and time wise. In the future, it would be interesting to extend our analyses to
+      the recent years after the Covid-19 pandemic, and compare crime statistics. 
+    </p>
+
+    <p>References:</p>
+     <p>The paper, 
+      <a href="https://www.tandfonline.com/doi/full/10.1080/00380237.2020.1730280">Exploring the Social Construction of Crime by Neighborhood: News Coverage of Crime in Boston</a> 
+      touches on the ways that the news media report the neighborhoods in which homicides, robberies, and assaults are 
+      committed, in terms of, for example, racial typification and the law of opposites. It uses many sources from the 1980s 
+      through the 2010s. Its references include, namely, the Boston Globe among other local news sources. 
+      It has different data types ranging from heatmaps of crime by neighborhood to scatterplots to linear regressions. <br />
+      Furthermore, the paper, <a href="https://massinc.org/wp-content/uploads/2016/11/The-Geography-of-Incarceration.pdf">The Geography of Incarceration</a>
+      touches on the incarceration rates of the different neighborhoods in Boston. 
+      It was made in 2016 and has different data types from 2008 through 2015, including heatmaps and bar charts. 
+      It also offers criticisms and suggestions to policy-makers in Boston.</p>
+
+<script src="scripts/main.js"></script>
+<script src="d3main.js"></script>
+  </body>
+</html>

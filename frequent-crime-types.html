@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelAlign": "right", "labelAngle": 45}, "title": {"fontSize": 14, "fontWeight": "normal"}}, "data": {"name": "data-2f621e88bd2712a9ac0b85128a98911b"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "Crime Type", "type": "nominal"}, {"field": "Frequency", "type": "quantitative"}], "x": {"axis": {"labelAngle": -45, "labelOverlap": false}, "field": "Crime Type", "sort": "-y", "title": "Crime Type", "type": "nominal"}, "y": {"axis": {"labelAngle": 0}, "field": "Frequency", "title": "Frequency", "type": "quantitative"}}, "height": 400, "title": "Top 10 Most Frequent Crime Types", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-2f621e88bd2712a9ac0b85128a98911b": [{"Crime Type": "ASSAULT - AGGRAVATED - BATTERY", "Frequency": 792}, {"Crime Type": "MURDER, NON-NEGLIGIENT MANSLAUGHTER", "Frequency": 223}, {"Crime Type": "WARRANT ARREST", "Frequency": 140}, {"Crime Type": "WEAPON - FIREARM - CARRYING / POSSESSING, ETC", "Frequency": 85}, {"Crime Type": "BALLISTICS EVIDENCE/FOUND", "Frequency": 82}, {"Crime Type": "SEARCH WARRANT", "Frequency": 51}, {"Crime Type": "ASSAULT - AGGRAVATED", "Frequency": 48}, {"Crime Type": "WEAPON - FIREARM - OTHER VIOLATION", "Frequency": 30}, {"Crime Type": "DEATH INVESTIGATION", "Frequency": 29}, {"Crime Type": "VANDALISM", "Frequency": 26}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

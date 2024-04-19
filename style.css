@@ -1,0 +1,48 @@
+html {
+    font-size: 12px;
+    font-family: "Raleway"; 
+  }
+/* top header center font */
+  h1 {font-size: 60px;
+    text-align: center;
+    }
+/* font size and spacing */  
+    h2 {color: rgb(40, 46, 100) ;
+        }
+  p,
+  li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color:rgb(40, 46, 100)
+  }
+
+  html {
+    background-color: #93b5d5;
+  }
+/* text effect */
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #ffffff;
+    text-shadow: 3px 3px 1px rgb(175, 173, 173);
+  }
+  h2 {
+    text-decoration: underline;
+  }
+
+
+  body {
+    width: 800px;
+    text-align: left;
+    margin: 0 auto;
+    background-color: #93b5d5;
+    padding: 0 20px 20px 20px;
+    border: 5px #93b5d5;
+  }
+  
+  
+  
+  
+  
+  

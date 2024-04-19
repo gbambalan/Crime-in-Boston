@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"grid": true, "labelAngle": 0, "titleFontSize": 12, "titleFontWeight": "normal"}}, "data": {"name": "data-d95a0ccb4ac30c6346cafb0f2dc71ecd"}, "mark": {"type": "line", "color": "blue", "point": true}, "encoding": {"tooltip": [{"field": "YEAR", "type": "quantitative"}, {"field": "Total Crimes", "type": "quantitative"}], "x": {"field": "YEAR", "type": "ordinal"}, "y": {"field": "Total Crimes", "type": "quantitative"}}, "height": 400, "title": "Crime Trend Over the Years", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-d95a0ccb4ac30c6346cafb0f2dc71ecd": [{"YEAR": 2015, "Total Crimes": 53597}, {"YEAR": 2016, "Total Crimes": 99430}, {"YEAR": 2017, "Total Crimes": 101338}, {"YEAR": 2018, "Total Crimes": 98888}, {"YEAR": 2019, "Total Crimes": 98104}, {"YEAR": 2020, "Total Crimes": 74218}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
